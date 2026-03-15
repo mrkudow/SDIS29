@@ -1,0 +1,464 @@
+/* 
+    css/mycss.css
+*/
+
+body {
+    background-color: #ECECEC;
+}
+
+#contenuAffiche {
+    display: flex;
+    justify-content:center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+#authentif {
+    width : 50%;
+}
+fieldset {
+    border-radius: 5px;
+    padding: 5px;
+    border: 1px solid #DB0005;
+    width: 100%;
+}
+legend {
+    margin-bottom:0px;
+    padding-bottom: 0px;
+}
+footer {
+    position: relative;
+    margin-top: 10px;
+    background-color: #EDEDED;
+    text-align: center;
+    font-size: smaller;
+    padding: 10px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+header {
+    background-color: #333333;
+    color: #EDEDED;
+    padding: 10px;
+
+}
+
+.profil {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    background: #555;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px 15px;
+    width: 180px;
+    text-align: left;
+    font-size: 0.9rem;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.profil img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    align-self: center;
+    border: 2px solid #b71c1c;
+    background: #eee;
+}
+
+.profil p {
+    margin: 0;
+    line-height: 1.2;
+}
+
+#entete {
+    display: flex;
+    /* align-items: center; */
+    align-items: flex-end ;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    margin-top: 10px;
+    padding: 0;
+    overflow: hidden;
+    background-color: #DB0005;
+    border-radius: 8px;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #C90001;
+    color: white;
+}
+.navbar {
+    padding: 0 0 0 0;
+    border-radius: 5px;
+    margin-left: -8%;
+}
+
+#identite {
+    width : 100%;
+}
+
+#logo {
+    z-index:1; /* arriere plan */
+}
+#login {
+    background-color: #EDEDED;
+    color: #333333;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    margin-left: -8%;
+}
+
+button a {
+    text-decoration:none;
+    color: #333333;
+}
+aside, #btAfficherPompier {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+select[readonly] {
+    pointer-events: none;
+}
+
+th,td{
+    text-align:center;
+}
+.gris {
+    background-color: gray;
+    color: black;
+    border-color : dimgray;
+    width : 15%;
+    border: 3px solid;
+}
+
+.blanc {
+    background-color: white;
+    color: black;
+    border-color: whitesmoke;
+    width : 15%;
+    border: 3px solid;
+}
+
+.vert {
+    background-color: lime;
+    color: black;
+    border-color: limegreen;
+    width : 15%;
+    border: 3px solid;
+}
+
+.jaune {
+    background-color: gold;
+    color: black;
+    border-color: goldenrod;
+    width : 15%;
+    border: 3px solid;
+}
+
+.ztVentil {
+    width : 15%;
+    border: 3px solid;
+}
+
+.ztVentil:hover {
+    border-color: grey;
+}
+
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    color: #222;
+    background: #fafafa;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+main h1 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    color: #d32f2f;
+}
+
+section {
+    background: white;
+    border-radius: 8px;
+    padding: 1rem 1.25rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #eee;
+}
+
+section h2 {
+    font-size: 1.2rem;
+    color: #444;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 0.3rem;
+    margin-bottom: 0.8rem;
+}
+
+dl {
+    display: grid;
+    grid-template-columns: 160px 1fr;
+    row-gap: 0.4rem;
+    column-gap: 1rem;
+    margin: 0;
+}
+
+dt {
+    font-weight: 600;
+    color: #555;
+}
+
+dd {
+    margin: 0;
+    color: #333;
+}
+
+input, select {
+    width: 100%;
+    padding: 0.4rem 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    background: #fff;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #d32f2f;
+    box-shadow: 0 0 0 2px rgba(211, 47, 47, 0.15);
+}
+
+.btn-groupe {
+    margin-top: 10px;
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-groupe > button, .a-btn {
+    background: #d32f2f;
+    color: white;
+    border: none;
+    padding: 0.6rem 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-right: 0.5rem;
+    transition: background 0.2s;
+    text-decoration: none;
+}
+
+.btn-groupe > button:hover, .a-btn:hover {
+    background: #b71c1c;
+    color: #fff;
+}
+
+.table-deroulante {
+    max-height: 400px;
+    overflow-y: auto;
+    margin-top: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    background: #fff;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 600px;
+}
+
+th {
+    position: sticky;
+    top: 0;
+    background: #f5f5f5;
+    font-weight: 600;
+    color: #333;
+    border-bottom: 2px solid #e0e0e0;
+    padding: 0.75rem 1rem;
+    text-align: center;
+    z-index: 1;
+}
+
+td {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid #eee;
+    color: #333;
+    background: #fff;
+}
+
+td button {
+    background: #d32f2f;
+    color: white;
+    border: none;
+    padding: 0.45rem 0.8rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background 0.2s;
+}
+
+td button:hover {
+    background: #b71c1c;
+}
+
+.disponibilite select {
+    width: 100%;
+    padding: 0.6rem 0.8rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    background: #fff;
+    color: #333;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    padding-right: 2.5rem;
+}
+
+.disponibilite select:hover {
+    border-color: #d32f2f;
+}
+
+.disponibilite select:focus {
+    outline: none;
+    border-color: #d32f2f;
+    box-shadow: 0 0 0 3px rgba(211, 47, 47, 0.1);
+}
+
+.disponibilite-section {
+    height: auto;
+}
+
+.invisible {
+    display: none;
+}
+
+.dispo0 {
+    background: #555;
+}
+
+.dispo1 {
+    background: #fff;
+}
+
+.dispo2 {
+    background: #cccc00
+}
+
+.dispo3 {
+    background: #fff;
+}
+
+/* Conteneur pour l'affichage horizontal */
+.planning-contenu {
+    display: flex;
+    width: 100%;
+    gap: 2px;
+}
+
+.planning-contenu form {
+    margin: 0;
+    padding: 0;
+    flex: 1;                /* Chaque form prend une part égale */
+    display: flex;          /* Pour que l’input remplisse bien */
+}
+
+.planning-contenu form input[type="checkbox"] {
+    flex: 1;                /* L’input occupe tout l’espace */
+    width: 100%;
+}
+
+.planning-dates {
+    position: sticky;
+    top: 0;
+}
+
+/* Style pour les labels (N, M, A, S) */
+.planning-horaires {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #666;
+    min-width: 20px;
+    text-align: center;
+    padding: 2px 0;
+}
+
+/* Style pour les valeurs de disponibilité */
+.planning-dispos {
+    appearance: none;        /* Supprime le style checkbox par défaut */
+    flex: 1;
+    min-width: 0;
+    text-align: center;
+    padding: 6px 0;
+    font-size: 0.9rem;
+    color: #333;
+    border-radius: 3px;
+    background: #f8f8f8;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    border: 1px solid #e0e0e0;
+    transition: background 0.2s, border-color 0.2s;
+}
+
+.planning-dispos:hover {
+    cursor: pointer;
+}
+
+/* Assurer que les cellules ont une largeur minimale */
+.planning td {
+    min-width: 120px; /* Largeur suffisante pour 4 éléments horizontaux */
+}
+
+.planning tr:first-child td {
+    font-weight: 600;
+    color: #333;
+    background: #f9f9f9;
+    border-bottom: 2px solid #e0e0e0;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+/* Pour la ligne d'en-tête des créneaux (N, M, A, S) */
+.planning tr:nth-child(2) td {
+    background: #f9f9f9;
+    border-bottom: 2px solid #e0e0e0;
+    left: 0;
+}
+
+.inactif {
+    pointer-events: none;
+    cursor: default;
+}
+
+.inactif:hover {
+    pointer-events: none;
+    cursor: default;
+}

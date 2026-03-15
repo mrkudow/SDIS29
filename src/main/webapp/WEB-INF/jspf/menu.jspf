@@ -1,0 +1,17 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ page pageEncoding="UTF-8" %>
+<nav>
+   <ul>
+       <c:if test="${sessionScope.isAuthentified}">
+            <li><a href="profil">Profil</a></li>
+       </c:if>
+       <c:if test="${sessionScope.role == 'chef de centre'}">
+            <li><a href="caserne">Ma caserne</a></li>
+            <li><a href="parametres">Paramètres</a></li>
+       </c:if>
+        <c:if test="${sessionScope.isAuthentified}">
+            <li><a href="deconnexion">Deconnexion</a></li>
+       </c:if>
+   </ul>
+</nav>
